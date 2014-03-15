@@ -1,0 +1,12 @@
+<ul>
+	{{#each widget in controller}}
+		<li>widget: {{widget.name}}
+	{{/each}}
+<ul>
+
+{{#if loadingMore}}
+	Loading more..
+{{else}}
+	<a href='#' {{action 'getMore'}}>Get More...</a>
+{{/if}}
+
